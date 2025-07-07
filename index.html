@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Segura</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Desactivar clic derecho
+    document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+    // Desactivar teclas comunes de desarrolladores (F12, Ctrl+Shift+I, etc.)
+    document.addEventListener("keydown", function (e) {
+      if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
+        (e.ctrlKey && e.key === "U")
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Bienvenido a mi página</h1>
+    <p>Este es un ejemplo básico de HTML y CSS con opciones básicas de seguridad.</p>
+  </div>
+</body>
+</html>
