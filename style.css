@@ -37,9 +37,10 @@ p {
     }
 
     .boton-brillante {
-cursor:pointer;
+  cursor:pointer;
   position:relative;
   padding:10px 20px;
+  marging:10%;
   background:white;
   font-size:28px;
   border-top-right-radius:10px;
