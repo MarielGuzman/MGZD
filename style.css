@@ -37,15 +37,19 @@ p {
     }
 
     .boton-brillante {
-      padding: 15px 30px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      background: linear-gradient(to right, purple, pink);
-      cursor: pointer;
-      position: relative;
-      z-index: 1;
-      animation: brillar 2s infinite alternate;
+    cursor:pointer;
+    position:relative;
+    padding:10px 20px;
+    background:white;
+    font-size:28px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:all 1s;
+      &:after,&:before{
+        content:" ";
+        width:10px;
+        height:10px;
+        position:absolute;
+        border :0px solid #fff;
+        transition:all 1s;
     }
